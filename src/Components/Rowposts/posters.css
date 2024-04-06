@@ -1,0 +1,71 @@
+.row{
+     margin-left: 20px;
+     color: #fff;
+}
+.posters{
+    display: flex;
+    padding-left:40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.smallposter{
+    /* border:#211e1e 1px solid; */
+    height:130px;
+    width:200px;
+    padding: 10px;
+    transition: opacity 0.3s; 
+
+
+}
+.poster{
+    /* border:#211e1e 1px solid; */
+    height:260px;
+    width:400px;
+    padding: 20px;
+    transition: opacity 0.3s; 
+
+}
+.poster:hover {
+    opacity: 0.2; 
+    /* border-radius: 30%; */
+    cursor: pointer;
+}
+.smallposter:hover{
+    opacity: 0.3; 
+    height:170px;
+    width:230px;
+    cursor: pointer;
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+.wrapper{
+    text-align: center;
+}
+.close{
+    margin-left: 10px;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left:2rem ;
+    padding-right:2rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(51,51,51,0.5);
+}
+
+.playbutton{
+    margin-left: 10px;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left:2rem ;
+    padding-right:2rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(51,51,51,0.5);
+}
