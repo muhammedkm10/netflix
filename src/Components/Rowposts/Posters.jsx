@@ -76,6 +76,7 @@ const trailershow = (id) =>{
                     <button className="close"onClick={closeVideo}>Close Video</button> 
                 </div>
             )}
+            
             {!showVideo && trailerid && (
             <div>
             <button className='playbutton' onClick={() => setShowVideo(true)}>Play Video</button> 
