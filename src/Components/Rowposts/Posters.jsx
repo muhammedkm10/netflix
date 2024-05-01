@@ -16,9 +16,15 @@ function Posters(props) {
         setShowVideo(false); 
     };
   useEffect(()=>{
+    
     axios.get(props.link)
-    .then(response=>setRowdata(response.data.results))
-    .catch(error=>alert("an error is occured",error))
+    .then(response=>{
+      console.log(response);
+      setRowdata(response.data.results)})
+    
+    .catch(error=>{
+      console.log(error)
+      alert("an error is occured",error)})
   },[])
 
 const trailershow = (id) =>{
